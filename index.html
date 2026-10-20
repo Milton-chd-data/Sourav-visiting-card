@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Personal digital business card">
+  <title>Sourav | Digital Visiting Card</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1020;--panel:#131c30;--line:#29354d;--text:#f4f7ff;--muted:#aab6ce;--accent:#72e5c2;--accent2:#8ba7ff}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(ellipse at top,#1b3150 0,#0b1020 52%,#080c16 100%);padding:24px 14px}
+    .wrap{width:min(100%,520px);margin:0 auto}
+    .card{overflow:hidden;border:1px solid var(--line);border-radius:28px;background:linear-gradient(150deg,rgba(28,42,66,.98),rgba(15,22,39,.98));box-shadow:0 24px 70px #0007}
+    .hero{padding:30px 24px 24px;text-align:center;background:linear-gradient(135deg,#1c3451,#18223c 65%,#25304d)}
+    .avatar{width:92px;height:92px;margin:0 auto 14px;border-radius:28px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#101827;font-weight:900;font-size:35px;box-shadow:0 10px 28px #0004}
+    h1{margin:0;font-size:30px;letter-spacing:-.7px}
+    .tag{margin:8px 0 0;color:#c4d0e8;font-size:14px}
+    .pill{display:inline-block;margin-top:15px;padding:7px 12px;border:1px solid #ffffff2c;border-radius:999px;font-size:12px;color:var(--accent);letter-spacing:.4px}
+    .content{padding:22px}
+    .intro{margin:0 0 20px;text-align:center;color:var(--muted);line-height:1.55;font-size:14px}
+    .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .action{display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:12px 10px;border:1px solid var(--line);border-radius:15px;text-decoration:none;color:var(--text);font-weight:650;background:#ffffff06}
+    .action.primary{background:var(--accent);border-color:var(--accent);color:#10201e}
+    .action svg{width:19px;height:19px;flex-shrink:0}
+    .section{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+    .section h2{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:1.4px;color:#c5d3ec}
+    .detail{display:flex;gap:12px;align-items:flex-start;margin:12px 0;color:var(--muted);font-size:14px;line-height:1.45}
+    .detail strong{display:block;color:var(--text);font-size:13px;margin-bottom:2px}
+    .detail a{color:var(--muted);text-decoration:none;overflow-wrap:anywhere}
+    .socials{display:flex;flex-wrap:wrap;gap:8px}
+    .social{border:1px solid var(--line);border-radius:999px;padding:9px 13px;color:var(--text);text-decoration:none;font-size:13px;background:#ffffff06}
+    .hint{margin:18px 0 0;padding:12px;border-radius:12px;background:#ffffff07;color:#aab6ce;font-size:12px;line-height:1.5}
+    footer{text-align:center;color:#7f8da8;font-size:11px;padding:17px 8px 2px}
+    @media(min-width:420px){body{padding-top:36px}.hero{padding-top:36px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <header class="hero">
+        <div class="avatar" aria-label="Initials">S</div>
+        <h1>Sourav</h1>
+        <p class="tag">Personal Digital Visiting Card</p>
+        <span class="pill">LET'S CONNECT</span>
+      </header>
+      <div class="content">
+        <p class="intro">Thanks for stopping by. Use the options below to contact me or save my details.</p>
+        <div class="actions">
+          <a class="action primary" href="tel:+910000000000" data-phone>☎ <span>Call Me</span></a>
+          <a class="action" href="https://wa.me/910000000000" data-whatsapp target="_blank" rel="noopener">◉ <span>WhatsApp</span></a>
+          <a class="action" href="mailto:your.email@example.com" data-email>✉ <span>Email Me</span></a>
+          <a class="action" href="contact.vcf" download>＋ <span>Save Contact</span></a>
+        </div>
+        <section class="section">
+          <h2>Contact details</h2>
+          <div class="detail"><span>✉</span><div><strong>Email</strong><a href="mailto:your.email@example.com" data-email-text>your.email@example.com</a></div></div>
+          <div class="detail"><span>☎</span><div><strong>Phone / WhatsApp</strong><a href="tel:+910000000000" data-phone-text>+91 XXXXX XXXXX</a></div></div>
+          <div class="detail"><span>⌖</span><div><strong>Office address</strong><span data-address>Your office address (edit before publishing)</span></div></div>
+        </section>
+        <section class="section">
+          <h2>Social profiles</h2>
+          <div class="socials">
+            <a class="social" href="#" data-instagram target="_blank" rel="noopener">Instagram</a>
+            <a class="social" href="#" data-facebook target="_blank" rel="noopener">Facebook</a>
+            <a class="social" href="#" data-linkedin target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </section>
+        <p class="hint">This is a starter template. Replace the sample contact details and social links in <strong>index.html</strong> before sharing this page publicly.</p>
+      </div>
+    </article>
+    <footer>Digital visiting card · Made to share</footer>
+  </main>
+  <script>
+    /*
+      PERSONALISE THIS CARD:
+      Replace the sample values below with your own public contact details.
+      Do not put passwords, private keys, or sensitive personal information here.
+    */
+    const profile = {
+      name: "Sourav",
+      phone: "+910000000000",
+      email: "your.email@example.com",
+      address: "Your office address (edit before publishing)",
+      instagram: "",
+      facebook: "",
+      linkedin: ""
+    };
+    const phoneDigits = profile.phone.replace(/[^0-9+]/g, "");
+    document.querySelector("h1").textContent = profile.name;
+    document.querySelector(".avatar").textContent = profile.name.trim().charAt(0).toUpperCase() || "S";
+    document.title = profile.name + " | Digital Visiting Card";
+    document.querySelector("[data-phone]").href = "tel:" + phoneDigits;
+    document.querySelector("[data-phone-text]").href = "tel:" + phoneDigits;
+    document.querySelector("[data-phone-text]").textContent = profile.phone === "+910000000000" ? "+91 XXXXX XXXXX" : profile.phone;
+    document.querySelector("[data-whatsapp]").href = "https://wa.me/" + profile.phone.replace(/\D/g, "");
+    document.querySelector("[data-email]").href = "mailto:" + profile.email;
+    document.querySelector("[data-email-text]").href = "mailto:" + profile.email;
+    document.querySelector("[data-email-text]").textContent = profile.email;
+    document.querySelector("[data-address]").textContent = profile.address;
+    for (const [key, selector] of [["instagram","[data-instagram]"],["facebook","[data-facebook]"],["linkedin","[data-linkedin]"]]) {
+      const link = document.querySelector(selector);
+      if (profile[key]) { link.href = profile[key]; }
+      else { link.hidden = true; }
+    }
+    // Create a vCard download from the profile values.
+    const vcard = [
+      "BEGIN:VCARD","VERSION:3.0","FN:" + profile.name,
+      "TEL;TYPE=CELL:" + profile.phone,"EMAIL:" + profile.email,
+      "ADR;TYPE=WORK:;;" + profile.address.replace(/,/g, "\\,") + ";;;;",
+      "END:VCARD"
+    ].join("\r\n");
+    const contactLink = document.querySelector('a[download]');
+    contactLink.href = URL.createObjectURL(new Blob([vcard], {type:"text/vcard;charset=utf-8"}));
+  </script>
+</body>
+</html>
