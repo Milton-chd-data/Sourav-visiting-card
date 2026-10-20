@@ -47,16 +47,16 @@
       <div class="content">
         <p class="intro">Thanks for stopping by. Use the options below to contact me or save my details.</p>
         <div class="actions">
-          <a class="action primary" href="tel:+910000000000" data-phone>☎ <span>Call Me</span></a>
-          <a class="action" href="https://wa.me/910000000000" data-whatsapp target="_blank" rel="noopener">◉ <span>WhatsApp</span></a>
-          <a class="action" href="mailto:your.email@example.com" data-email>✉ <span>Email Me</span></a>
+          <a class="action primary" href="tel:+919056433396" data-phone>☎ <span>Call Me</span></a>
+          <a class="action" href="https://wa.me/919056433396" data-whatsapp target="_blank" rel="noopener">◉ <span>WhatsApp</span></a>
+          <a class="action" href="mailto:Sourav.miltonlifecare@gmail.com" data-email>✉ <span>Email Me</span></a>
           <a class="action" href="contact.vcf" download>＋ <span>Save Contact</span></a>
         </div>
         <section class="section">
           <h2>Contact details</h2>
-          <div class="detail"><span>✉</span><div><strong>Email</strong><a href="mailto:your.email@example.com" data-email-text>your.email@example.com</a></div></div>
-          <div class="detail"><span>☎</span><div><strong>Phone / WhatsApp</strong><a href="tel:+910000000000" data-phone-text>+91 XXXXX XXXXX</a></div></div>
-          <div class="detail"><span>⌖</span><div><strong>Office address</strong><span data-address>Your office address (edit before publishing)</span></div></div>
+          <div class="detail"><span>✉</span><div><strong>Email</strong><a href="mailto:Sourav.miltonlifecare@gmail.com" data-email-text>Sourav.miltonlifecare@gmail.com</a></div></div>
+          <div class="detail"><span>☎</span><div><strong>Phone / WhatsApp</strong><a href="tel:+919056433396" data-phone-text>+91 90564 33396</a></div></div>
+          <div class="detail"><span>⌖</span><div><strong>Office address</strong><span data-address>396, 1st Floor, adjoining Talwar Dairy, opposite Gurdwara Sahib, Sarangpur</span></div></div>
         </section>
         <section class="section">
           <h2>Social profiles</h2>
@@ -66,7 +66,7 @@
             <a class="social" href="#" data-linkedin target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </section>
-        <p class="hint">This is a starter template. Replace the sample contact details and social links in <strong>index.html</strong> before sharing this page publicly.</p>
+        
       </div>
     </article>
     <footer>Digital visiting card · Made to share</footer>
@@ -79,9 +79,9 @@
     */
     const profile = {
       name: "Sourav",
-      phone: "+910000000000",
-      email: "your.email@example.com",
-      address: "Your office address (edit before publishing)",
+      phone: "+919056433396",
+      email: "Sourav.miltonlifecare@gmail.com",
+      address: "396, 1st Floor, adjoining Talwar Dairy, opposite Gurdwara Sahib, Sarangpur",
       instagram: "",
       facebook: "",
       linkedin: ""
@@ -92,7 +92,7 @@
     document.title = profile.name + " | Digital Visiting Card";
     document.querySelector("[data-phone]").href = "tel:" + phoneDigits;
     document.querySelector("[data-phone-text]").href = "tel:" + phoneDigits;
-    document.querySelector("[data-phone-text]").textContent = profile.phone === "+910000000000" ? "+91 XXXXX XXXXX" : profile.phone;
+    document.querySelector("[data-phone-text]").textContent = profile.phone;
     document.querySelector("[data-whatsapp]").href = "https://wa.me/" + profile.phone.replace(/\D/g, "");
     document.querySelector("[data-email]").href = "mailto:" + profile.email;
     document.querySelector("[data-email-text]").href = "mailto:" + profile.email;
